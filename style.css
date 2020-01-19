@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+    margin: 10px auto;
+    border: 1px solid lightgrey;
+    border-radius: 0.5em;
+    width: 300px;
+    padding: 10px;
+}
+
+.pool{ /*mais de 1 dado*/
+    border: none;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    height: 42vh;
+}
+
+.total{
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 0.5em 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+}
+
+#dice-pool{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.btn{
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    color: white;
+    font-weight: 800;
+    box-shadow: 2px 2px lightgrey;
+    border: none;
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+.flex{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.roll{
+    background: black;
+}
+
+.clear{
+    background: silver;
+}
+
+.btn-action{
+    width: 80px;
+}
+
+.dice{
+    height: 100px;
+    width: 100px;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.dice-mid{
+    height: 70px;
+    width: 70px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.dice-min{
+    height: 40px;
+    width: 40px;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.d2{ background: darkred;}
+.d3{ background: red;}
+.d4{ background: orangered;}
+.d5{ background: orange;}
+.d6{ background: gold;}
+.d7{ background: greenyellow;}
+.d8{ background: springgreen;}
+.d10{ background:aquamarine;}
+.d12{ background: cyan;}
+.d14{ background: dodgerblue;}
+.d16{ background: mediumblue;}
+.d20{ background: indigo;}
+.d24{ background: purple;}
+.d30{ background: mediumorchid;}
+.d100{ background: deeppink;}
