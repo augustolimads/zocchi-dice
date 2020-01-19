@@ -76,12 +76,22 @@ function efeitoBtn(btnClicado) {
     };
 };
 
+//soma o resultado no total
+let total = 0;
+function somaTotal(roll){
+    total += roll;
+    document.querySelector('#soma').innerText = total;
+}
+
 //cria um dado quando clica no botao
 function criaDado(dado) {
     let novoDado = document.createElement('div');
+    let roll = 0;
     novoDado.classList.add('dice', dado);
-    novoDado.innerText = diceRoller(dado);
+    roll = diceRoller(dado);
+    novoDado.innerText = roll;
     document.querySelector('#result').appendChild(novoDado);
+    somaTotal(roll);
 }
 
 //muda o tamanho dos dados exibidos
