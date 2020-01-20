@@ -9,76 +9,28 @@ btnDados.forEach(btn => {
     btn.addEventListener('click', () => {
         let listaDados = document.querySelectorAll('#result div').length;
         efeitoBtn(btn.classList[1]); //d2
+
         if (listaDados >= 4) {
             dadosMid();
-        }
+        };
         if (listaDados >= 9) {
             dadosMin();
-        }
+        };
         if (listaDados <= 3) {
             dadosBig();
-        }
+        };
     });
 });
 
-
 //teste de resultado do dado
 function efeitoBtn(btnClicado) {
-    switch (btnClicado) {
-        case 'd2':
-            criaDado(btnClicado);
-            break;
-        case 'd3':
-            criaDado(btnClicado);
-            break;
-        case 'd4':
-            criaDado(btnClicado);
-            break;
-        case 'd5':
-            criaDado(btnClicado);
-            break;
-        case 'd6':
-            criaDado(btnClicado);
-            break;
-        case 'd7':
-            criaDado(btnClicado);
-            break;
-        case 'd8':
-            criaDado(btnClicado);
-            break;
-        case 'd10':
-            criaDado(btnClicado);
-            break;
-        case 'd12':
-            criaDado(btnClicado);
-            break;
-        case 'd14':
-            criaDado(btnClicado);
-            break;
-        case 'd16':
-            criaDado(btnClicado);
-            break;
-        case 'd20':
-            criaDado(btnClicado);
-            break;
-        case 'd24':
-            criaDado(btnClicado);
-            break;
-        case 'd30':
-            criaDado(btnClicado);
-            break;
-        case 'd100':
-            criaDado(btnClicado);
-            break;
-        default:
-            console.log('tente novamente');
-            break;
-    };
+    criaDado(btnClicado);
 };
 
 //soma o resultado no total
 let total = 0;
-function somaTotal(roll){
+
+function somaTotal(roll) {
     total += roll;
     document.querySelector('#soma').innerText = total;
 }
