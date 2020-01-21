@@ -90,17 +90,8 @@ document
     .addEventListener("click", () => location.reload());
 
 //deleta um dado quando clica nele
-
-/*document.querySelector("#result").addEventListener("click", function(e) {
-  if (e.target.querySelectorAll("div.dice div.dice-mid div.dice-min")) {
-    e.target.remove();
-    subtraiTotal(Number(e.target.innerText));
-  }
-});*/
-
 document.querySelector("#result").addEventListener("click", e => {
-    if (e.target.classList.contains('dice', 'dice-mid', 'dice-min')) {
-        console.log(e.target.classList);
+    if (e.target.classList.contains('dice') || e.target.classList.contains('dice-mid') || e.target.classList.contains('dice-min')) {
         e.target.remove();
         subtraiTotal(Number(e.target.innerText));
     }
